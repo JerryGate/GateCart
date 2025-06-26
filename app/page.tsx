@@ -8,7 +8,7 @@ import * as motion from "motion/react-client"; // <-- Add this import
 const Home: React.FC = async () => {
   const products = await stripe.products.list({
     expand: ["data.default_price"],
-    limit: 3
+    limit: 10
   });
 
   return (
